@@ -7,7 +7,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
-st.sidebar.image(r'C:\Users\Y SAI KUMAR\Downloads\WhatsApp Image 2024-07-17 at 22.45.42.jpeg')
+st.sidebar.image(r'WhatsApp Image 2024-07-17 at 22.45.42.jpeg')
 
 s = st.sidebar.selectbox("Do You Know About CyberBulling HERE IT IS",("Cyberbulling",'CyberBulling_Forms'))
 if s=='Cyberbulling':
@@ -24,9 +24,9 @@ elif s=="CyberBulling_Forms":
                         Cyberstalking: Continuously monitoring and harassing someone online.
                         Trolling: Posting inflammatory or off-topic messages to provoke and upset others.''')
 
-st.image(r"C:\Users\Y SAI KUMAR\Desktop\PB_Banner1.jpeg")
+st.image(r"PB_Banner1.jpeg")
 # Load the dataset
-df = pd.read_csv(r'C:\Users\Y SAI KUMAR\ProjectBazaar\Cyberbulling.csv')
+df = pd.read_csv(r'Cyberbulling.csv')
 
 # Data Preprocessing
 X = df[['comment']]
@@ -89,11 +89,11 @@ if st.button("DETECT"):
 
         # Display image based on the predicted label with 200x200 size
         if predicted_label == 'normal':
-            st.image(r"C:\Users\Y SAI KUMAR\Downloads\normal.png", caption='Normal', width=200)
+            st.image(r"normal.png", caption='Normal', width=200)
         elif predicted_label == 'offensive':
-            st.image(r"C:\Users\Y SAI KUMAR\Downloads\offensive.png", caption='Offensive', width=200)
+            st.image(r"offensive.png", caption='Offensive', width=200)
         elif predicted_label == 'hatespeech':
-            st.image(r"C:\Users\Y SAI KUMAR\Downloads\hatespeech.png", caption='Hate Speech', width=200)
+            st.image(r"hatespeech.png", caption='Hate Speech', width=200)
 
 # Display accuracy and classification report
 #st.write("Model Accuracy")
